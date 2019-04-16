@@ -1,13 +1,12 @@
-<div class="row">
-  <div class="col-12">
-    <h4>Add a new URL</h4>
-  </div>
-</div>
-<div class="row">
-  <div class="col-12">
-    <form
-      [formGroup]="newLinkForm"
-      (submit)="onSubmit()"
-    ></form>
+<div id="home">
+  <div class="row">
+    <div class="col-md-5">
+      <!-- Component containing the form to add a new bookmark -->
+      <app-url-form></app-url-form>
+    </div>
+    <div class="col-md-5 offset-md-1">
+      <!-- Placeholder for bookmark list component -->
+      <label>Bookmark list component</label>
+    </div>
   </div>
 </div>

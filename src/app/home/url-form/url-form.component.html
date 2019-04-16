@@ -1,0 +1,73 @@
+<div id="urlForm">
+  <div class="row">
+    <div class="col-12">
+      <h4>Add a new URL</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p>
+        Add a new link to your bookmarks list.
+      </p>
+    </div>
+  </div>
+  <form
+    id="newLinkForm"
+    [formGroup]="newLinkForm"
+    (submit)="onSubmit()"
+  >
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">URL</span>
+      </div>
+      <input
+        id="url"
+        formControlName="url"
+        class="form-control"
+        type="text"
+        placeholder="e.g. http://www.google.com"
+        aria-label="e.g. http://www.google.com"
+      >
+      <!-- <div class="input-group-append">
+        <button
+          type="submit"
+          class="input-group-text"
+        >Save</button>
+      </div> -->
+    </div>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span
+          class="input-group-text"
+          id="title"
+        >Title</span>
+      </div>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="e.g. Google"
+        aria-label="e.g. Google"
+        aria-describedby="title"
+      >
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div
+          class="btn-group"
+          role="group"
+          aria-label="Form buttons"
+          style="float:right;"
+        >
+          <button
+            class="btn btn-light"
+            type="button"
+          >Clear</button>
+          <button
+            class="btn btn-success"
+            type="submit"
+          >Save</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
