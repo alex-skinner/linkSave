@@ -1,0 +1,23 @@
+<div id="bookmarkList">
+  <div class="row">
+    <div class="col-12">
+      <h4>Your bookmarked URLs</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="let bookmark of bookmarkList"
+        >
+          <label style="width: 100%;">{{bookmark.title}}</label>
+          <a
+            href="{{bookmark.url}}"
+            target="_blank"
+          >{{bookmark.url}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
